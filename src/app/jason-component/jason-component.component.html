@@ -2,12 +2,12 @@
   <div id="inner">
     <label>Number A</label>
     <input type="text" 
-    (keydown)="calculator3()" 
+    (keyup)="calculator3()" 
     [(ngModel)]="numberA">
-    <p>{{lastOp}}</p>
+    <!-- <p>{{db}}</p> -->
     <label>Number B</label>
     <input type="text" 
-    (keydown)="calculator3()" 
+    (keyup)="calculator3()" 
     [(ngModel)]="numberB">
   </div>
   <select (change)="calculator2($event)">
@@ -19,4 +19,4 @@
   </select>
 </div>
 <hr>
-<h2 >{{(1*numberC)}}</h2>
+<h2 >{{numberA}} {{lastOp}} {{numberB}} = {{(1*numberC)}}</h2>

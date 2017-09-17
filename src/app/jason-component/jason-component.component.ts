@@ -10,6 +10,7 @@ export class JasonComponentComponent implements OnInit {
   numberB: number = 2;
   numberC: number;
   lastOp: string = '+';
+  db;
 
   constructor() { }
 
@@ -33,6 +34,7 @@ export class JasonComponentComponent implements OnInit {
    }
   
   calculator(event: string) {
+    this.db = `lastOp=${this.lastOp},event=${event},numberA=${this.numberA},numberB=${this.numberB},`
     this.lastOp = event;
     switch (event) {
       case '+':
@@ -51,5 +53,6 @@ export class JasonComponentComponent implements OnInit {
         this.numberC = (1 * this.numberA) % (1 * this.numberB);
         break;
     }
+    this.db += `numberC=${this.numberC}`
   }
 }
