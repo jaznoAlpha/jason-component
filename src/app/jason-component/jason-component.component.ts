@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class JasonComponentComponent implements OnInit {
   numberA: number = 1;
   numberB: number = 2;
-  numberC: number;
+  numberC: number = 3;
   lastOp: string = '+';
   db;
 
