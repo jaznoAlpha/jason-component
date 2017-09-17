@@ -1,0 +1,22 @@
+<div>
+  <div id="inner">
+    <label>Number A</label>
+    <input type="text" 
+    (keydown)="calculator3()" 
+    [(ngModel)]="numberA">
+    <p>{{lastOp}}</p>
+    <label>Number B</label>
+    <input type="text" 
+    (keydown)="calculator3()" 
+    [(ngModel)]="numberB">
+  </div>
+  <select (change)="calculator2($event)">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+  </select>
+</div>
+<hr>
+<h2 >{{(1*numberC)}}</h2>

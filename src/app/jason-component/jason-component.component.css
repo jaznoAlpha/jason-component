@@ -1,0 +1,14 @@
+h2 {
+    color: dodgerblue;
+    text-align: center;
+}
+
+#inner {
+    width: 25%;
+    margin: 0 auto;
+}
+
+select {
+    margin-top: 10px;
+    margin-left: 59%;
+}
